@@ -1,0 +1,115 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 Verdana;\f1\fswiss\fcharset0 Helvetica;\f2\fswiss\fcharset0 ArialMT;
+\f3\fmodern\fcharset0 Courier;\f4\fmodern\fcharset0 Courier-Bold;\f5\froman\fcharset0 Times-Roman;
+\f6\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;\red26\green34\blue35;\red27\green35\blue36;\red96\green37\blue136;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{lower-alpha\}.}{\leveltext\leveltemplateid2\'02\'01.;}{\levelnumbers\'01;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid3\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li2160\lin2160 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19940\viewh18180\viewkind0
+\deftab720
+\pard\pardeftab720\sl420\sa500
+
+\f0\fs42 \cf2 Could not start FMCore\
+\pard\pardeftab720\sl400\sa200
+
+\fs36 \cf2 Description\
+\pard\pardeftab720\sl360\sa200
+
+\f1\fs28 \cf3 This article describes common troubleshooting steps if the Suitcase Fusion or Universal Type Client FMCore will not start.\
+\pard\pardeftab720\sl400\sa200
+
+\f0\fs36 \cf2 Solution\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl440\sa80
+\ls1\ilvl0
+\f2\fs32 \cf2 {\listtext	1.	}Make sure that you have the latest update installed\uc0\u8232 
+\f1\fs28 \cf3 You can download the latest installers for Suitcase Fusion and Universal Type Client from the {\field{\*\fldinst{HYPERLINK "http://www.extensis.com/support/"}}{\fldrslt \cf4 Support section }}of our website.\
+\ls1\ilvl0
+\f2\fs32 \cf2 {\listtext	2.	}Attempt to reset the FMCore process
+\f1\fs28 \cf3 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl440
+\ls1\ilvl1\cf3 {\listtext	a.	}Go to your Apple Menu and select \'93Log Out\'94. After you\'92re logged out, just log back in. This is often enough to get the FMCore back up and running. If you\'92re on MacOS 10.7.x, uncheck \'93Reopen windows when logging back in\'94.\
+{\listtext	b.	}Delete the hidden .Extensis folder. This folder contains session information that may be damaged or out-of-date.\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\sl440
+\ls1\ilvl2\cf3 {\listtext	\'95	}Launch Terminal from 
+\f3 /Applications/Utilities
+\f1 \
+{\listtext	\'95	}Type or paste in:
+\f3  
+\f4\b rm -rf .Extensis
+\f1\b0 \
+{\listtext	\'95	}Hit 
+\f5 Return
+\f1  key on your keyboard\
+{\listtext	\'95	}Type in your computer\'92s administrator password if prompted\
+{\listtext	\'95	}Close Terminal\
+{\listtext	\'95	}Log out of OS X and then log back in\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl440\sa80
+\ls1\ilvl0
+\f2\fs32 \cf2 {\listtext	3.	}Restore the default configuration
+\f1\fs28 \cf3 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl440
+\ls1\ilvl1\cf3 {\listtext	\'95	}Suitcase Fusion\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\sl440
+\ls1\ilvl2\cf3 {\listtext	
+\f6 \uc0\u9642 
+\f1 	}Open 
+\f3 /Users/[username]/Library/Preferences
+\f1  in Finder\
+{\listtext	
+\f6 \uc0\u9642 
+\f1 	}Move com.extensis.SuitcaseFusion*.plist and com.extensis.SuitcaseFusion*.db to your desktop\
+{\listtext	
+\f6 \uc0\u9642 
+\f1 	}Attempt to launch Suitcase Fusion\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl360\sa200
+\ls1\ilvl1\cf3 {\listtext	\'95	}If the above steps don\'92t address the problem, your Fusion vault or database are probably damaged. Here\'92s how to reset the two:\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\sl440
+\ls1\ilvl2\cf3 {\listtext	
+\f6 \uc0\u9642 
+\f1 	}In Finder, go to 
+\f3 /Users/[username]/Library/Extensis
+\f1 \
+{\listtext	
+\f6 \uc0\u9642 
+\f1 	}Move Suitcase Fusion.fontvault to your desktop\
+{\listtext	
+\f6 \uc0\u9642 
+\f1 	}Attempt to launch Suitcase Fusion\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\sl360\sa200
+\ls1\ilvl2\cf3 {\listtext	
+\f6 \uc0\u9642 
+\f1 	}If it launches now, you will need to add your fonts back into the application.\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl440
+\ls1\ilvl1\cf3 {\listtext	\'95	}Universal Type Client\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\sl440
+\ls1\ilvl2\cf3 {\listtext	
+\f6 \uc0\u9642 
+\f1 	}Go to 
+\f3 /Users/[username]/Library/Preferences
+\f1 \
+{\listtext	
+\f6 \uc0\u9642 
+\f1 	}Drag com.extensis.UniversalTypeClient.plist and com.extensis.UniversalTypeClient.db to your desktop\
+{\listtext	
+\f6 \uc0\u9642 
+\f1 	}Attempt to launch Universal Type Client\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl360\sa200
+\ls1\ilvl1\cf3 {\listtext	\'95	}If the above does not work, move the client cache may be damaged. Here\'92s how to reset it:\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\sl440
+\ls1\ilvl2\cf3 {\listtext	
+\f6 \uc0\u9642 
+\f1 	}Go to 
+\f3 /Library/Extensis/UTC
+\f1 \
+{\listtext	
+\f6 \uc0\u9642 
+\f1 	}Select all of the folders inside of the UTC folder and drag them to the desktop\
+{\listtext	
+\f6 \uc0\u9642 
+\f1 	}Attempt to launch Universal Type Client\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\sl360\sa200
+\ls1\ilvl2\cf3 {\listtext	
+\f6 \uc0\u9642 
+\f1 	}If it launches now, you will need to log into your Universal Type Server and synchronize to get your fonts back\
+}
